@@ -1,0 +1,91 @@
+
+---
+bibliography: vignettes/bibliography.bib
+output: 
+  github_document:
+    df_print: kable
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+```{r packages, message = FALSE, warning=FALSE, echo = FALSE}
+# Chargement des packages
+library(tidyverse)
+library(here)
+library(gt)
+```
+
+
+# Check of table <img src='man/figures/logo.png' align="right" height="139" />
+
+<!-- badges: start -->
+[![Lifecycle:experimental](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![packageversion](https://img.shields.io/badge/Package%20version-0.0.1-orange.svg?style=flat-square)](commits/master)
+[![Licence](https://img.shields.io/badge/licence-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+<!-- [![R build status](https://github.com/SebastienBoutry/IBDL/workflows/R-CMD-check/badge.svg)](https://github.com/SebastienBoutry/IBDL/actions) -->
+<!-- badges: end -->
+
+
+# Installation de `{CheckOfTable}`
+
+La version du package `{CheckOfTable}` peut se télécharger via le site Github pour cela on aura besoin du package `{remotes}`: 
+
+```{r install, eval=FALSE}
+remotes::install_github("SebastienBoutry/CheckOfTable")
+```
+
+_NB : Le logiciel RTools est parfois nécessaire sur les machines Windows pour pouvoir installer le package `{remotes}`, puisque l'installation ici se fait depuis un dépôt de développement (Github) et non un dépôt officiel R. Vous pouvez l'installer ici : [Rtools](https://cran.r-project.org/bin/windows/Rtools/)_
+
+Une fois installé, vous pouvez charger le package avec :
+
+```{r echo=TRUE}
+library(CheckOfTable)
+```
+
+# Objectif
+
+L'objectif de ce package `{CheckOfTable}` est de fournir les fonctions nécessaires pour contrôler les tables.
+
+
+_NB : L'IBDL a été développé par l'équipe ECOVEA (INRAE, unité EABX) dans le projet Phytobenthos plan d'eau financé par l'OFB-Pôle ECLA._
+
+# Utilisation
+
+Le package `{IBDL}` sert à calculer l'Indice Biologique Diatomées en Lac (IBDL) afin de donner une valeur et une classe d'état écologique au plan d'eau étudié (conforme à la Directive Cadre Européenne sur l'Eau [@Directive2000]).
+
+_NB Dans le rapport scientifique [@Boutry2021], les différentes étapes de la construction de l'IBDL y est décrite._
+
+## Les besoins 
+
+
+
+## Les étapes
+
+
+# Contact
+
+<div align="center">
+
+&nbsp;&nbsp;&nbsp;:e-mail: [Email][Email]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;:speech_balloon: [Twitter][Twitter]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;:necktie: [LinkedIn][LinkedIn]
+
+<!--
+Quick Link
+-->
+[Twitter]:https://twitter.com/SebBoutry
+[LinkedIn]:https://www.linkedin.com/in/s%C3%A9bastien-boutry-4a77ba10/
+[Email]:mailto:sebastien.boutry@inrae.fr
+
+
+</div>
+
+# Références
+
+
