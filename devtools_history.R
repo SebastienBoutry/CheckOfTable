@@ -9,3 +9,5 @@ usethis::use_package("gt")
 usethis::use_pkgdown()
 # devtools::use_vignette("CheckOfTable",pkg="CheckOfTable")
 # usethis::use_vignette("CheckOfTable")
+# repo_url <- "https://github.com/SebastienBoutry/CheckOfTable"
+# usethis::use_git_remote(url = repo_url)
