@@ -1,4 +1,3 @@
-
 ---
 bibliography: vignettes/bibliography.bib
 output: 
@@ -36,7 +35,7 @@ library(gt)
 
 # Installation de `{CheckOfTable}`
 
-La version du package `{CheckOfTable}` peut se télécharger via le site Github pour cela on aura besoin du package `{remotes}`: 
+La version du package `{CheckOfTable}` peut se télécharger via le site Github pour cela on aura besoin du package `{remotes}`:
 
 ```{r install, eval=FALSE}
 remotes::install_github("SebastienBoutry/CheckOfTable")
@@ -54,21 +53,13 @@ library(CheckOfTable)
 
 L'objectif de ce package `{CheckOfTable}` est de fournir les fonctions nécessaires pour contrôler les tables.
 
-
-_NB : L'IBDL a été développé par l'équipe ECOVEA (INRAE, unité EABX) dans le projet Phytobenthos plan d'eau financé par l'OFB-Pôle ECLA._
-
 # Utilisation
 
-Le package `{IBDL}` sert à calculer l'Indice Biologique Diatomées en Lac (IBDL) afin de donner une valeur et une classe d'état écologique au plan d'eau étudié (conforme à la Directive Cadre Européenne sur l'Eau [@Directive2000]).
-
-_NB Dans le rapport scientifique [@Boutry2021], les différentes étapes de la construction de l'IBDL y est décrite._
-
-## Les besoins 
-
-
+Ce package sert au contrôle du format d'un jeu de données. Il renvoie les messages d'erreurs afin de corriger sur le jeu de données.
 
 ## Les étapes
 
+ Il est recommandé d'enchaîner les fonctions du package `{CheckOfTable}` pour valider le fichier d'importation.
 
 # Contact
 
