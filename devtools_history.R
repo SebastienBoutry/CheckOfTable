@@ -11,3 +11,6 @@ usethis::use_pkgdown()
 # usethis::use_vignette("CheckOfTable")
 # repo_url <- "https://github.com/SebastienBoutry/CheckOfTable"
 # usethis::use_git_remote(url = repo_url)
+pkgdown::build_site()
+devtools::document() # mettre à jour le namespace
+devtools::build_vignettes()

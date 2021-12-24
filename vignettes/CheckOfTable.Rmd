@@ -47,6 +47,11 @@ table_test %>%
 
 ## Contrôle du format data.frame - **fcot_table**
 
+```{r}
+fcot_table(table_test)
+```
+
+
 ## Contrôle des noms de colonnes - **fcot_colnames**
 
 ## Contrôle du type des colonnes
