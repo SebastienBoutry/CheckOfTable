@@ -48,7 +48,7 @@ table_test %>%
 ## Contrôle du format data.frame - **fcot_table**
 
 ```{r}
-fcot_table(table_test)
+# fcot_table(table_test)
 ```
 
 

@@ -12,7 +12,7 @@
 #' @export
 #'
 #' @examples
-fcot_format_table <- function(data,table_orig){
+fcot_table <- function(data,table_orig){
   test <- NULL
   if(sum(class(data) %in% "data.frame")==0){
     test <- tibble(test="1.1",
