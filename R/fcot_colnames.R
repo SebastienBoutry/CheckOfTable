@@ -21,7 +21,7 @@ fcot_colnames <- function(data,noms_colonnes,table_orig){
   ##
   data <- data %>%
     # rename_with(str_to_upper) %>%
-    dplyr::rename_with(str_trim)
+    dplyr::rename_with(stringr::str_trim)
   ##
   if(test$valeur_test == "oui"){
     verif <- which(! (noms_colonnes %in% names(data)))
