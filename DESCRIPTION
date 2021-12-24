@@ -1,0 +1,11 @@
+Package: CheckOfTable
+Title: Check of table (vérification du tableau)
+Version: 0.0.0.9000
+Authors@R: 
+     c(person("Sebastien", "Boutry", , "sebastien.boutry@inrae.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8046-585X")))
+Description: Ce package regroupe toutes les fonctions necessaires afin de vérifier le format des tableaux (data.frame).
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
