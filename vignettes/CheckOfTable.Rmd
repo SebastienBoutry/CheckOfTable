@@ -14,11 +14,39 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, message = FALSE, warning=FALSE, echo = FALSE}
+library(magrittr)
+library(tidyverse)
+library(gt)
 library(CheckOfTable)
 ```
 
 # Le jeu de données test
 
+Le tableau test ci-dessous possède 7 lignes et 5 colonnes.
+Deux colonnes `nom` et `b` sont du type chaîne de caractère tandis que les autres sont du type numérique.
+
+```{r, echo=FALSE}
+table_test<- tibble(nom=paste0("ind_",1:7),
+                    a=c(1:5,NA,-2),
+                    b=letters[1:7],
+                    c=c(-12,0,1,2:4,-2),
+                    d=c(10,20,25,30,35,36,37)
+)
+##
+table_test %>% 
+  gt() %>% 
+  tab_header(
+    title = md("Tableau test")
+  ) %>% 
+  tab_options(column_labels.background.color ="#275662" ) 
+```
+
+
 # Les fonctions du package `{CheckOfTable}`
+
+## Contrôle du format data.frame - **fcot_table**
+
+## Contrôle des noms de colonnes - **fcot_colnames**
+
 
