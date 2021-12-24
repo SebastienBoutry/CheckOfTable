@@ -49,4 +49,18 @@ table_test %>%
 
 ## Contrôle des noms de colonnes - **fcot_colnames**
 
+## Contrôle du type des colonnes
+
+### **fcot_type_numeric**
+
+### **fcot_type_character**
+
+## Contrôle des valeurs
+
+### **fcot_value_positive**
+
+### **fcot_value_empty**
+
+### **fcot_value_interval**
+
 
