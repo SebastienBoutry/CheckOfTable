@@ -47,12 +47,17 @@ table_test %>%
 
 ## Contrôle du format data.frame - **fcot_table**
 
-```{r, echo=TRUE, eval=TRUE}
-fcot_table(table_test,table_orig = "tableau test") 
+```{r, echo=TRUE, eval=FALSE}
+fcot_table(data=table_test,table_orig = "tableau test") 
 ```
 
 
 ## Contrôle des noms de colonnes - **fcot_colnames**
+
+```{r, echo =TRUE, eval=FALSE}
+fcot_colnames(table_test,noms_colonnes = c("nom","a","b","c","d"),table_orig = "table test")
+```
+
 
 ## Contrôle du type des colonnes
 

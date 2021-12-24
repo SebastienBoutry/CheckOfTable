@@ -1,5 +1,4 @@
-
-fcot_format_type_numeric <- function(data,noms_colonnes,table_orig){
+fcot_type_numeric <- function(data,noms_colonnes,table_orig){
   ##
   verif <- which(
     sapply(noms_colonnes,

@@ -12,6 +12,8 @@
 #' @export
 #'
 #' @examples
+#' obj <- c(1:5)
+#' fcot_table(data=obj,"test")
 fcot_table <- function(data,table_orig){
   test <- NULL
   if(sum(class(data) %in% "data.frame")==0){

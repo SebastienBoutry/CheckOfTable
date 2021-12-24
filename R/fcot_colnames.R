@@ -1,4 +1,21 @@
-fcot_format_colnames <- function(data,noms_colonnes,table_orig){
+#' Verify the names of the data.frame
+#'
+#' @param data tableau
+#' @param noms_colonnes les noms souhaités
+#' @param table_orig le nom du tableau
+#'
+#' @return un tableau de 6 colonnes :
+#' - test : code du test
+#' - valeur_test : oui ou non oui correspond à la validation du test
+#' - table_orig : nom du tableau d'origine
+#' - test_precis : code du test
+#' - message : message d'erreur
+#' @export
+#'
+#' @examples
+#' obj <- data.frame(a=1:5)
+#' fcot_colnames(obj,noms_colonnes=c("a"),table_orig="table test")
+fcot_colnames <- function(data,noms_colonnes,table_orig){
   ##
   test <- f_format_table(data,table_orig)
   ##

@@ -1,4 +1,17 @@
-fcot_format_type_character <- function(data,noms_colonnes,table_orig){
+#' Check string type of columns
+#'
+#' @param data tableau
+#' @param noms_colonnes les nom des colonnes dont on doit vérifier le type
+#' @param table_orig nom du tableau
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' obj <- data.frame(a=1:5)
+#' fcot_type_character(obj,noms_colonnes=c("a"),table_orig="table test")
+#'
+fcot_type_character <- function(data,noms_colonnes,table_orig){
   ##
   verif <- which(
     sapply(noms_colonnes,

@@ -24,3 +24,7 @@ un tableau de 6 colonnes :
 \description{
 Verify to a data.frame
 }
+\examples{
+obj <- c(1:5)
+fcot_table(data=obj,"test")
+}

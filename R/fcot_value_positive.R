@@ -1,4 +1,4 @@
-fcot_format_value_positive <- function(data,noms_colonnes,table_orig){
+fcot_value_positive <- function(data,noms_colonnes,table_orig){
   ##
   test <- NULL
   ##
