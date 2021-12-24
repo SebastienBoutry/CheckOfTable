@@ -1,4 +1,4 @@
-f_format_colnames <- function(data,noms_colonnes,table_orig){
+fcot_format_colnames <- function(data,noms_colonnes,table_orig){
   ##
   test <- f_format_table(data,table_orig)
   ##
