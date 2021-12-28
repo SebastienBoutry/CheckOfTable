@@ -11,6 +11,7 @@
 #' - test_precis : code du test
 #' - message : message d'erreur
 #' @export
+#' @import magrittr
 #'
 #' @examples
 #' obj <- data.frame(a=1:5)

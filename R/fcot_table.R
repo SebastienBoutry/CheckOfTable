@@ -17,7 +17,7 @@
 fcot_table <- function(data,table_orig){
   test <- NULL
   if(sum(class(data) %in% "data.frame")==0){
-    test <- tibble(test="1.1",
+    test <- tibble::tibble(test="1.1",
                    valeur_test="non",
                    nom_test="data.frame_format",
                    table_orig=table_orig,
@@ -30,7 +30,7 @@ fcot_table <- function(data,table_orig){
                    # )
     )
   }else{
-    test <- tibble(test="1.1",
+    test <- tibble::tibble(test="1.1",
                    valeur_test="oui",
                    nom_test="data.frame_format",
                    table_orig=table_orig,
