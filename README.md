@@ -37,11 +37,18 @@ library(CheckOfTable)
 L’objectif de ce package `{CheckOfTable}` est de fournir les fonctions
 nécessaires pour contrôler les tables.
 
+**NB : Inspiré du travail de Cédric Mondy et Delphine Corneil pour le
+SEEE.**
+
 # Utilisation
 
-## Les besoins
+Ce package sert au contrôle du format d’un jeu de données. Il renvoie
+les messages d’erreurs afin de corriger sur le jeu de données.
 
 ## Les étapes
+
+Il est recommandé d’enchaîner les fonctions du package `{CheckOfTable}`
+pour valider le fichier d’importation.
 
 # Contact
 
