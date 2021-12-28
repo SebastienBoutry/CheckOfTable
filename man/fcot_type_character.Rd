@@ -9,7 +9,7 @@ fcot_type_character(data, noms_colonnes, table_orig)
 \arguments{
 \item{data}{tableau}
 
-\item{noms_colonnes}{les nom des colonnes dont on doit vérifier le type}
+\item{noms_colonnes}{les nom des colonnes dont on doit verifier le type}
 
 \item{table_orig}{nom du tableau}
 }

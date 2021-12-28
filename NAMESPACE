@@ -3,3 +3,4 @@
 export(fcot_colnames)
 export(fcot_table)
 export(fcot_type_character)
+import(magrittr)
