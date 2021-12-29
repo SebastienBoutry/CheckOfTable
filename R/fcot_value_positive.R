@@ -26,7 +26,7 @@ fcot_value_positive <- function(data,noms_colonnes,table_orig){
                    nom_test="colnames_value",
                    table_orig=table_orig,
                    # sortie=data.frame(
-                   test_precis=paste0("2.2.1_",i),
+                   test_precis=paste0("2.2.1_"),
                    nom_test_precis="colnames_value_positive",
                    # test="format_data.frame",
                    message=paste0("")
