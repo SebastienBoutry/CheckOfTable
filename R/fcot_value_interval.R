@@ -1,3 +1,14 @@
+#' Check interval values
+#'
+#' @param data tableau
+#' @param noms_colonnes les nom des colonnes dont on doit verifier le type
+#' @param table_orig nom du tableau
+#'
+#' @return
+#' @export
+#' @import magrittr
+#'
+#' @examples
 fcot_value_interval <- function(data,noms_colonnes,mini,maxi,table_orig){
   ##
   test <- NULL
@@ -6,7 +17,7 @@ fcot_value_interval <- function(data,noms_colonnes,mini,maxi,table_orig){
                   function(i)
                     (
                       sum(dplyr::between(data %>%
-                                           pull(i),
+                                           dplyr::pull(i),
                                          left = mini,
                                          right = maxi),
                           na.rm=TRUE) == nrow(data)
@@ -14,7 +25,7 @@ fcot_value_interval <- function(data,noms_colonnes,mini,maxi,table_orig){
   )
   ##
   if(sum(verif) == length(noms_colonnes)){
-    test <- tibble(test="2.3",
+    test <- tibble::tibble(test="2.3",
                    valeur_test="oui",
                    nom_test="colnames_value",
                    table_orig=table_orig,
@@ -29,14 +40,14 @@ fcot_value_interval <- function(data,noms_colonnes,mini,maxi,table_orig){
     for(i in noms_colonnes[verif==FALSE]){
       verif <- which(
         (dplyr::between(data %>%
-                          pull(i),
+                          dplyr::pull(i),
                         left = mini,
                         right = maxi) %in% c(NA,FALSE))
       )
 
       ##
-      test <- bind_rows(test,
-                        tibble(test="2.3",
+      test <- dplyr::bind_rows(test,
+                        tibble::tibble(test="2.3",
                                valeur_test="non",
                                nom_test="colnames_value",
                                table_orig=table_orig,
