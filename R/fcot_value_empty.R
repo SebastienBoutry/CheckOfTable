@@ -1,3 +1,14 @@
+#' Check empty values
+#'
+#' @param data tableau
+#' @param noms_colonnes les nom des colonnes dont on doit verifier le type
+#' @param table_orig nom du tableau
+#'
+#' @return
+#' @export
+#' @import magrittr
+#'
+#' @examples
 fcot_value_empty <- function(data,noms_colonnes,table_orig){
   ##
   test <- NULL
@@ -5,12 +16,12 @@ fcot_value_empty <- function(data,noms_colonnes,table_orig){
   verif <- sapply(noms_colonnes,
                   function(i)
                     (
-                      sum(!(data %>% pull(i) %in% c(NA,""))) == nrow(data)
+                      sum(!(data %>% dplyr::pull(i) %in% c(NA,""))) == nrow(data)
                     )
   )
   ##
   if(sum(verif) == length(noms_colonnes)){
-    test <- tibble(test="2.2",
+    test <- tibble::tibble(test="2.2",
                    valeur_test="oui",
                    nom_test="colnames_value",
                    table_orig=table_orig,
@@ -24,12 +35,12 @@ fcot_value_empty <- function(data,noms_colonnes,table_orig){
   }else{
     for(i in noms_colonnes[verif==FALSE]){
       verif <- which(
-        (data %>% pull(i) %in% c(NA,""))
+        (data %>% dplyr::pull(i) %in% c(NA,""))
       )
 
       ##
-      test <- bind_rows(test,
-                        tibble(test="2.2",
+      test <- dplyr::bind_rows(test,
+                        tibble::tibble(test="2.2",
                                valeur_test="non",
                                nom_test="colnames_value",
                                table_orig=table_orig,
